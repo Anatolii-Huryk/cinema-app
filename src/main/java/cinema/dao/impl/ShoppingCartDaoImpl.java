@@ -12,7 +12,6 @@ import org.hibernate.query.Query;
 
 @Dao
 public class ShoppingCartDaoImpl implements ShoppingCartDao {
-
     @Override
     public ShoppingCart add(ShoppingCart shoppingCart) {
         Session session = null;
@@ -50,7 +49,6 @@ public class ShoppingCartDaoImpl implements ShoppingCartDao {
             throw new DataProcessingException("Can't find shopping cart by user: " + user, e);
         }
     }
-
     @Override
     public void update(ShoppingCart shoppingCart) {
         Session session = null;
